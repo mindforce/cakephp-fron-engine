@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<fieldset id="standard" label="Link options">
+			<field name="id" type="text" label="Override ID for link"/>
+			<field name="class" type="text" label="Additional class for link"/>
+			<field name="rel" type="text" label="Additional relation for link"/>
+			<field name="target" type="select" default="" label="Target for link">
+				<option value="">No target</option>
+				<option value="_self">Same window</option>
+				<option value="_blank">New window</option>
+				<option value="_parent">Open in parent frame</option>
+				<option value="_top">Open in the full body of the window</option>
+			</field>
+		</fieldset>
+	</params>
+</config>

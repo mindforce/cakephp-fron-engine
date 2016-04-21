@@ -1,0 +1,42 @@
+{
+    "name": "mindforce/cakephp-front-engine",
+    "description": "CakePHP Front operations plugin",
+	"homepage": "http://mindforce.me",
+	"keywords": ["cakephp", "ui", "frontend", "view"],
+	"type": "cakephp-plugin",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Denys Kyselov",
+			"homepage": "https://mindforce.me"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/mindforce/cakephp-front-engine/issues",
+		"source": "https://github.com/mindforce/cakephp-front-engine"
+	},
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=5.4.16",
+        "cakephp/plugin-installer": "*",
+        "cakephp/cakephp": ">=3.1",
+		"cakephp/migrations": "*",
+		"friendsofcake/search": "~1.2",
+		"mindforce/cakephp-garderobe-bootstrap3": "*",
+		"mindforce/cakephp-garderobe-bootstrap-kit": "*"
+	},
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "FrontEngine\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FrontEngine\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
