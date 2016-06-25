@@ -50,7 +50,9 @@ class CoreEvent implements EventListenerInterface {
             unset($meta['title']);
             unset($meta['title_separator']);
             foreach($meta as $key=>$value){
-                if(!$view->fetch($key)){
+                if($view->fetch($key)){
+                    $view->Html->meta($key, $view->fetch($key), ['block' => true]);
+                } else {
                     $view->Html->meta($key, $value, ['block' => true]);
                 }
             }
