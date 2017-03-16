@@ -44,6 +44,15 @@ $config = [
         'path' => 'Meta.robots',
         'title' => 'Robots directive',
         'default' => 'index, follow',
+        'options' => [
+            'type' => 'select',
+            'options' => [
+                'index, follow' => __('Index page text and links'),
+                'noindex, follow' => __('NoIndex page text but index links'),
+                'index, nofollow' => __('Index page text but no index links'),
+                'noindex, nofollow' => __('No Index page text and links')
+            ]
+        ],
     ],
     [
         'path' => 'Meta.description',
