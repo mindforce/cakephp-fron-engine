@@ -32,14 +32,14 @@ class CoreEvent implements EventListenerInterface {
     }
 
     public function onControllerInit($event) {
-        $controller = $event->subject();
+        $controller = $event->getSubject();
         if(($theme = Configure::read('App.theme'))&&Plugin::loaded($theme)){
             $controller->viewBuilder()->theme($theme);
         }
     }
 
     public function setDefaultViewAssets($event){
-        $view = $event->subject();
+        $view = $event->getSubject();
         $params = $view->request->params;
         if($meta = Configure::read('Meta')){
             $title = $view->fetch('title');

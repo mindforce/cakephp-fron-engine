@@ -17,11 +17,11 @@
 	},
 	"minimum-stability": "dev",
 	"require": {
-		"php": ">=5.6",
-        "cakephp/plugin-installer": "*",
-        "cakephp/cakephp": "~3.2",
-		"cakephp/migrations": "*",
-        "friendsofcake/search": "~4.3",
+        "php": ">=5.6",
+        "cakephp/cakephp": "3.7.*",
+        "cakephp/migrations": "^2.0.0",
+        "cakephp/plugin-installer": "^1.0",
+        "friendsofcake/search": "^5.1.1",
 		"mindforce/cakephp-garderobe-bootstrap3": "*",
 		"mindforce/cakephp-garderobe-bootstrap-kit": "*"
 	},

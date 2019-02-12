@@ -30,9 +30,9 @@ class LinksTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('front_engine_links');
-        $this->displayField('title');
-        $this->primaryKey('id');
+        $this->setTable('front_engine_links');
+        $this->setDisplayField('title');
+        $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
         $this->addBehavior('Tree');

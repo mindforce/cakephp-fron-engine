@@ -24,9 +24,9 @@ class MenusTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('front_engine_menus');
-        $this->displayField('title');
-        $this->primaryKey('id');
+        $this->setTable('front_engine_menus');
+        $this->setDisplayField('title');
+        $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
         $this->addBehavior('Tools.Slugged', [
